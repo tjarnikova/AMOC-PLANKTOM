@@ -15,7 +15,28 @@ import transporter as tran
 #         tran.get_transports(year,model,row,trac,northIsIn=True, showPlot=False, units = 'kmol/s')
 model = 'RVD0'
 trac = 'DIC'
-rows = [73,90,100,109]
+rows = [91,92]
+for row in rows:
+    for year in range(1950,2022):
+        tran.get_transports(year,model,row,trac,northIsIn=True, showPlot=False, units = 'kmol/s')
+
+model = 'RVA0'
+trac = 'DIC'
+rows = [91,92]
+for row in rows:
+    for year in range(1950,2022):
+        tran.get_transports(year,model,row,trac,northIsIn=True, showPlot=False, units = 'kmol/s')
+
+model = 'RVB0'
+trac = 'DIC'
+rows = [91,92]
+for row in rows:
+    for year in range(1950,2022):
+        tran.get_transports(year,model,row,trac,northIsIn=True, showPlot=False, units = 'kmol/s')
+
+model = 'RVC0'
+trac = 'DIC'
+rows = [91,92]
 for row in rows:
     for year in range(1950,2022):
         tran.get_transports(year,model,row,trac,northIsIn=True, showPlot=False, units = 'kmol/s')

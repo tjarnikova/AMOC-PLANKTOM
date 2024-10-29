@@ -21,6 +21,9 @@ def get_atlantic(array, row_index, target_index = 130):
     while end_index < len(row) - 1 and row[end_index + 1] == 1:
         end_index += 1
 
+    if row_index in [91,92]:
+        start_index = 93
+
     return start_index, end_index
 
 
